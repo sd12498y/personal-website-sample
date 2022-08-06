@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+h1, p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 64, 74);
+}
+
+a {
+    color: #192E5F;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#line {
+    width: 15%;
+    color: rgb(59, 64, 74);
+    margin-top: 60px;
+}
+
+#url {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.flip-card {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #dadada;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2) ;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.flip-card-front {
+    backface-visibility: hidden;
+
+}
+.flip-card-back {
+    backface-visibility: hidden;
+
+}
+.flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    position: absolute;
+
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front {
+    background-color: #424856;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+#logo {
+    max-width: 40%;
+}
+
+#back-logo {
+    margin-top: 30px;
+    max-width: 60%;
+}
+
+#profile {
+    margin-top: 10px;
+    max-width: 60%;
+    clip-path: circle(75px at center);
+}
+
+.nav-link {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+}
